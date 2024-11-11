@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phambili Ma-Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic Styles */
+        body, h2, p {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .topbar {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .topbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .topbar-social a {
+            color: #fff;
+            margin: 0 5px;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #444;
+            padding: 10px 20px;
+        }
+        .navbar-nav {
+            display: flex;
+            gap: 15px;
+        }
+        .navbar-nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .navbar-nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .navbar .toggle {
+            display: none;
+            font-size: 24px;
+            color: #fff;
+        }
+        /* Hero Section */
+        .hero {
+            background: #e0e0e0;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h2 {
+            color: #333;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .hero p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .hero .btn:hover {
+            background-color: #555;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+                flex-direction: column;
+            }
+            .navbar .toggle {
+                display: block;
+                cursor: pointer;
+            }
+            .navbar-nav.show {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Topbar Section -->
+    <div class="topbar">
+        <div class="topbar-col">
+            <a href="mailto:phambilimaafrika@gmail.com"><i class="fa fa-envelope"></i> phambilimaafrika@gmail.com</a>
+        </div>
+        <div class="topbar-col">
+            <div class="topbar-social">
+                <a href="https://web.facebook.com/profile.php?id=100063507009282" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100063507009282" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100063507009282" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100063507009282" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <header class="navbar">
+        <span class="toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="navbar-nav" id="navbarCollapse">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero row align-items-center">
+            <div class="col-md-7">
+                <h2>Best & Trusted</h2>
+                <h2><span>Cleaning</span> Service</h2>
+                <p>Lorem ipsum dolor sit amet elit pretium facilisis ornare</p>
+                <a class="btn" href="service.html">Explore Now</a>
+            </div>
+        </section>
+
+        <!-- Placeholder Sections for Other Pages -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about Phambili Ma-Africa, our mission, and values.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Explore the cleaning services we offer for both commercial and residential spaces.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Our Projects</h2>
+            <p>See our recent cleaning projects and the quality of our work.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for inquiries, quotes, or more information.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Phambili Ma-Africa. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
